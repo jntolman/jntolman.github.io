@@ -1,0 +1,293 @@
+/**
+ * Basic Portfolio Recommended Homework Assignment 1
+ * Jarrett Tolman - portfolio.html
+ **/
+
+/*** html tags ***/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	color: #777;
+	background-color: #ccc;
+	background-image: url('../images/wavegrid.png');
+	height: 100%;
+}
+
+header {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h2, h3, h4, h5 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: bold;
+}
+
+p {
+	font-size: 18px;
+	margin: 0 0 20px;
+}
+
+nav {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+footer {
+	background-color: #666;
+	padding: 20px 0;
+	text-align: center;
+	border-top: 5px solid #4aaaa5;
+	height: 100px;
+}
+
+footer p {
+	font-size: 12px;
+	color: #ccc;
+}
+
+/*** wrapper class for header, content, and footer ***/
+
+.wrapper {
+	width: 960px;
+	min-height: 100%;
+	margin: 0 auto -100px;
+}
+
+/*** main navigation ***/
+
+#main-nav {
+	height: 80px;
+	background-color: #fff;
+	border-bottom: 2px solid #ccc;
+}
+
+#logo {
+	float: left;
+	background-color: #4aaaa5;
+	position: relative;
+	height: 78px;
+	color: white;
+	font-weight: bold;
+	padding: 20px 30px;
+	font-size: 26px;
+}
+
+.logo-link {
+	color: white;
+	text-decoration: none;
+}
+
+.logo-link:hover {
+	color: #ccc;
+}
+
+#nav {
+	float: right;
+	list-style-type: none;
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #ccc;
+}
+
+.nav-list {
+    display: inline;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ccc;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.nav-link:hover {
+    color: #777;
+}
+
+.last-link {
+	padding: 14px 5px 16px 14px;
+}
+
+/*** main content ***/
+
+.main-content {
+	width: 650px;
+	margin: 30px 0;
+	padding: 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.content-header {
+	font-size: 24px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #ccc;
+}
+
+/*** sidebar content ***/
+
+.sidebar-content {
+	width: 270px;
+	margin: 30px 0;
+	float: right;
+}
+
+#social {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 20px 30px;
+	height: 180px;
+}
+
+.sidebar-header {
+	font-size: 22px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ccc;
+}
+
+.social-link {
+	margin: 5px 10px 5px 5px;
+}
+
+.first-social {
+	margin: 0 5px 0 5px;
+}
+
+.last-social {
+	margin: 0 0 0 -5px;
+}
+
+.social-img:hover {
+	opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/*** about content ***/
+
+#profile {
+	margin: 5px;
+}
+
+/*** contact form ***/
+
+#contact-form {
+	font-size: 18px;
+}
+
+.text-input {
+	padding: 8px 0 8px 10px;
+	width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.text-input:hover {
+	background-color: #f3f3f3;
+
+}
+
+.text-input:focus {
+	background-color: #f3f3f3;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+  font-size: 14px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+
+::-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+
+::-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
+#submit {
+	background-color: #4aaaa5;
+	color: white;
+	font-size: 18px;
+	padding: 10px 30px;
+	border-style: none;
+}
+
+#submit:hover {
+	color: #ccc;
+}
+
+/*** portolio content ***/
+
+.portfolio-row {
+	height: 100%;
+	margin: 10px auto;
+	clear: both;
+	text-align: center;
+}
+
+.portfolio-item {
+	margin: 10px 0 20px;
+	position: relative;
+}
+
+.portfolio-item:hover {
+	opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.portfolio-image {
+}
+
+.portfolio-label {
+	position: absolute;
+	z-index: 2;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	background-color: #4aaaa5;
+	color: white;
+	padding: 10px 0;
+	font-weight: normal;
+}
+
+/*** sticky footer ***/
+
+.push {
+	height: 100px;
+}
+
+/*** helper classes ***/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
