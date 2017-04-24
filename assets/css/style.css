@@ -58,3 +58,16 @@ h2 {
 .program {
 	font-style: italic;
 }
+
+span.glyphicon-envelope {
+	font-size: 2.75em;
+}
+
+a.mail {
+	color: #666;
+}
+
+a.mail:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
