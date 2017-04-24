@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Basic Portfolio Recommended Homework Assignment 1 -->
+<!-- Web Development Portfolio -->
 <!-- Jarrett Tolman - index.html -->
 <!-- ================================================= -->
 <html lang="en">
@@ -9,98 +9,165 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jarrett Tolman</title>
 
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-		<!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		
+		<!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet"
+			  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+			  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+			  crossorigin="anonymous">
+		<!-- custom css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel='shortcut icon' href='assets/images/favicon.ico' type='image/x-icon'>
 	</head>
-	<body>
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		
-		<header id="main-nav">
-			<div class="container">
-				<h1>Jarrett Tolman</h1>
-				<nav class="navbar navbar-fixed-top">
-					<div class="container">
-						<ul id="nav">
-							<li class="nav-list"><a class="social-link first-social" href="https://github.com/jntolman" target="_blank"><img class="social-img" src="assets/images/social-github.svg" alt="GitHub" width="50"></a></li>
-							<li class="nav-list"><a class="social-link" href="https://linkedin.com/in/jntolman" target="_blank"><img class="social-img" src="assets/images/social-linkedin.svg" alt="LinkedIn" width="50"></a></li>
-							<li class="nav-list"><a class="social-link last-social" href="https://stackoverflow.com/users/story/4113764" target="_blank"><img class="social-img" src="assets/images/social-stackoverflow.svg" alt="StackOverflow" width="50"></a></li>
-						</ul>
+		<!-- header -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand hover-img" href="#welcome"><img src="assets/images/logik-profile-250.png" class="img-responsive" width="50" alt="Jarrett Tolman"></a>
 					</div>
-				</nav> 
-			</div>
-		</header> 
+					<ul class="nav navbar-nav">
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#resume">Resume</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://github.com/jntolman"><img src="assets/images/social-github.svg" class="img-responsive hover-img" alt="GitHub" width="40"></a></li>
+						<li><a href="https://linkedin.com/in/jntolman"><img src="assets/images/social-linkedin.svg" class="img-responsive hover-img" alt="LinkedIn" width="40"></a></li>
+						<li><a href="https://stackoverflow.com/users/story/4113764"><img src="assets/images/social-stackoverflow.svg" class="img-responsive hover-img" alt="StackOverflow" width="40"></a></li>
+					</ul>
+				</div>
+			</nav> 
+		</header>
 		
 		<!-- main content -->
-		<div class="container">
-			<section id="about" class="main-content left">
+		<div class="container" id="main-content">
 
-				<div id="resume">
-					<div id="profile">
-						<h2>Full Stack Web Developer</h2>
-						<p>Creative Full Stack Web Developer with experience implementing, managing, and automating processes in a fast-paced SaaS evironment. 
-							Particularly interested in growing web development skills to solve problems of increasing comlexity with a progressive company.
-						</p>
-					</div>
-
-					<div id="skillset">
-						<h2>Technical Skills</h2>
-						<p>HTML | CSS | Javascript | Python | VBA/Excel | Terminal/Bash | Git/GitHub/BitBucket/SourceTree | WordPress | 
-							macOS/Windows | jQuery | Node.js | ES6 | Bootstrap | Heroku | Firebase | PHP | MySQL | PostgreSQL | 
-							Salesforce | JIRA | SEO | SEM
-						</p>
-					</div>
-
-					<div id="education">
-						<h2>Education &amp; Training</h2>
-						<p>University of North Carolina at Charlotte | Full Stack Web Development Certificate | 05/2017</p>
-						<p>Cental Piedmont Community College | AAS in Web Technologies | 12/2011</p>
-						<p>University of North Carolina at Charlotte | BA in Theatre | 05/2004</p>
-					</div>
-
-					<div id="experience">
-						<h2>Professional Experience</h2>
-						<h3>Yodle | 06/2012 - 12/2016</h3>
-						<p><span class="underline"><b>Job Progression</b></span>
-						<br>QA Automation Manager | 05/2015 - 12/2016
-						<br>Senior Quality Analyst | 05/2014 - 04/2015
-						<br>Quality Analyst | 07/2013 - 04/2014
-						<br>Web Dev Associate | 06/2012 - 06/2013</p>
-						<p>Promoted to people manager to lead Client Services web production quality team in building out custom automation solutions for all owned audits. Trained team members on Excel, VBA, and Python to ensure productivity gains. Team was responsible for auditing setup and lifetime maintenance for 60,000 accounts across two distinct product offerings (Online Marketing Platform and Practice Management System).</p>
-						<p>Supported high value national brand accounts as QA Analyst. Created scalable solution utilizing custom formulas and macros in Excel for QA of launches and mass updates for large relationships. Wrote Google listing scrapes using Selenium (Python) and VBA modules to clean, process data, and flag inconsistencies. Wrote mechanize (Python) web scrape to pull call center data and feed it to a dashboard used by management and senior leadership, decreasing data delay from days to near realtime.</p>
-						<p>Developed and ran scalable weekly auditing process for entire account base checking for best practices in production, SEO, and SEM. Coordinated workflows to ensure quick resolution of flagged issues and automated tasks in Python for time savings of 8+ hours per week per resource.</p>
+			<section id="welcome">
+				<div class="row">
+					<div class="col col-md-10">
+						<h1><span id="pagetitle">jarrett</span>tolman.com</h1>
 					</div>
 				</div>
-
+			</section>
+			
+			<section id="about">
+				<div class="row">
+					<div class="col col-md-10">
+						<h2>About</h2>
+						<p>
+							I am currently enrolled in the Full-Stack Coding Boot Camp at UNCC with a focus on Mongo/Express/React/Node. 
+							Most recently, I led a team using Excel, VBA, and Python to create automated and scalable QA solutions 
+							supporting Client Services web production for a market leading online marketing company. I enjoy gaining and 
+							sharing knowledge and invested a substantial amount of time in training the team on the solutions I had 
+							developed and on the skills I used. This included Excel, programming basics, intros to online resources, and 
+							VBA scripting, which they were able to apply to their workflows for significant productivity gains. Ran a 
+							few half-marathons, wrote a few plays, made funny videos, fresh beats, performed all over Charlotte, 
+							self-published a collection of poetry, recorded a spoken word album, produced a music &amp; arts festival. I am 
+							excited to again be focused on coding (I was once a computer science major), and am open to and seeking new 
+							opportunities in front-end, UX, or full-stack web development.
+						</p>
+					</div>
+				</div>
 			</section>
 
-			<!-- aside 
-			<aside class="sidebar-content">
-				<!-- social section 
-				<section id="social">
-					<!-- social header 
-					<header class="sidebar-header">
-						<h3>Connect with Me</h3>
-					</header>
+			<section id="portfolio">
+				<div class="row">
+					<div class="col col-md-10">
+						<h2>Portfolio</h2>
+						<p>coming soon... for now, you check out my <a href="https://github.com/jntolman">GitHub</a>.</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="row" id="resume">
+					<div class="col col-md-10">
+						<h2>Resume</h2>
+
+						<div class="row" id="profile">
+							<div class="col col-md-12">
+								<p>
+									Creative Web Developer with experience implementing, managing, and automating 
+									processes in a fast-paced SaaS evironment. Particularly interested in growing 
+									development skills to solve problems of increasing comlexity with a progressive company.
+								</p>
+							</div>
+						</div>
+
+						<div class="row" id="skillset">
+							<div class="col col-md-12">
+								<h3>Technical Skills &amp; Tools</h3>
+								<div class="row">
+									<div class="col col-md-5 col-sm-offset-1">
+										<h4>Frequently Used</h4>
+										<p>
+											HTML5 | CSS3 | JavaScript | Terminal | Git | GitHub | WordPress CMS | macOS | 
+											Node.js | Bootstrap | Handlebars | Heroku | MongoDB | MySQL | SEO | APIs | 
+											Testing with Mocha/Chai | VS Code | Postman | MySQL Workbench | RoboMongo | 
+											MAMP | Slack
+										</p>
+									</div>
+									<div class="col col-md-5 col-sm-offset-1">
+										<h4>Working Knowledge</h4>
+										<p>
+											React | React Native | Python | VBA for Excel | PHP | PostgreSQL | 
+											BitBucket | SourceTree | WordPress Development | Windows | jQuery | 
+											ES6 | Firebase | Travic CI | Salesforce | JIRA | SEM | Domain Management | 
+											Photoshop | Illustrator | Dreamweaver | Premier
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="education">
+							<h3>Education &amp; Training</h3>
+							<p>University of North Carolina at Charlotte | Full Stack Web Development Certificate | 05/2017</p>
+							<p>Cental Piedmont Community College | AAS in Web Technologies | 12/2011</p>
+							<p>University of North Carolina at Charlotte | BA in Theatre | 05/2004</p>
+						</div>
+
+						<div id="experience">
+							<h3>Professional Experience</h3>
+							<h3>Yodle | 06/2012 - 12/2016</h3>
+							<p><span class="underline"><b>Job Progression</b></span>
+							<br>QA Automation Manager | 05/2015 - 12/2016
+							<br>Senior Quality Analyst | 05/2014 - 04/2015
+							<br>Quality Analyst | 07/2013 - 04/2014
+							<br>Web Dev Associate | 06/2012 - 06/2013</p>
+							<p>Promoted to people manager to lead Client Services web production quality team in building out custom automation solutions for all owned audits. Trained team members on Excel, VBA, and Python to ensure productivity gains. Team was responsible for auditing setup and lifetime maintenance for 60,000 accounts across two distinct product offerings (Online Marketing Platform and Practice Management System).</p>
+							<p>Supported high value national brand accounts as QA Analyst. Created scalable solution utilizing custom formulas and macros in Excel for QA of launches and mass updates for large relationships. Wrote Google listing scrapes using Selenium (Python) and VBA modules to clean, process data, and flag inconsistencies. Wrote mechanize (Python) web scrape to pull call center data and feed it to a dashboard used by management and senior leadership, decreasing data delay from days to near realtime.</p>
+							<p>Developed and ran scalable weekly auditing process for entire account base checking for best practices in production, SEO, and SEM. Coordinated workflows to ensure quick resolution of flagged issues and automated tasks in Python for time savings of 8+ hours per week per resource.</p>
+						</div>
 					
-				</section>
-			</aside> -->
-			
-			<!-- clear floats -->
-			<div class="clear"></div>
+					</div>
+				</div>
+			</section>
 
 		</div>	
 
-		 <!--footer -->
-		<footer>
-			<div class="wrapper">
-				<p>&copy; Copyright 2017 Jarrett Tolman</p>
-				<img id="profile" src="assets/images/logik-profile-250.png" alt="Jarrett Tolman">
+		<!--footer -->
+		<!--<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col col-md-12 text-center">
+						<p>&copy; Copyright 2017 Jarrett Tolman</p>
+					</div>
+				</div>
 			</div>
-		</footer> 
+		</footer> -->
+
+		<!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+				integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+				crossorigin="anonymous"></script>
 
 		<!-- Google Analytics -->
 		<script>
