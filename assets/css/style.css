@@ -3,17 +3,37 @@
  * Jarrett Tolman - style.css
  **/
 
-h2 {
-	border-bottom: solid 1px black;
-}
-
 html, body, #main-content {
 	height: 100%;
+}
+
+body {
+	margin-bottom: 100px;
+}
+
+footer {
+	padding-top: 100px;
+}
+
+h2 {
+	border-bottom: solid 1px black;
 }
 
 .navbar-default {
 	background-color: #fff;
 	border-color: #999;
+}
+
+.navbar-default .navbar-toggle {
+     border: none; 
+}
+
+.navbar-brand {
+	height: 70px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -22,11 +42,19 @@ html, body, #main-content {
 }
 
 #welcome, #about, #portfolio, #resume {
-	height: 100%;
+	min-height: 100%;
 	padding-top: 70px;
 }
 
 #pagetitle, .hover-img:hover {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
+}
+
+.school {
+	font-weight: bold;
+}
+
+.program {
+	font-style: italic;
 }
