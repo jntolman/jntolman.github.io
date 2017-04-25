@@ -29,19 +29,19 @@
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
 							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 						</button>
-						<a class="navbar-brand" href="#welcome"><img class="img-responsive hover-img" src="assets/images/logik-profile-250.png" width="50" alt="Jarrett Tolman"></a>
+						<a class="navbar-brand" title="welcome" href="#welcome"><img class="img-responsive hover-img" src="assets/images/logik-profile-250.png" width="50" alt="Jarrett Tolman"></a>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="#about">About</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#resume">Resume</a></li>
+							<li><a class="navlink" id="firstlink" title="about" href="#about">about</a></li>
+							<li><a class="navlink" id="middlelink" title="portfolio" href="#portfolio">portfolio</a></li>
+							<li><a class="navlink" id="lastlink" title="resume" href="#resume">resume</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="https://github.com/jntolman"><img src="assets/images/social-github.svg" class="img-responsive hover-img" alt="GitHub" width="40"></a></li>
-							<li><a href="https://linkedin.com/in/jntolman"><img src="assets/images/social-linkedin.svg" class="img-responsive hover-img" alt="LinkedIn" width="40"></a></li>
-							<li><a href="https://stackoverflow.com/users/story/4113764"><img src="assets/images/social-stackoverflow.svg" class="img-responsive hover-img" alt="StackOverflow" width="40"></a></li>
-							<li><a class="mail" href="mailto:contact@jarretttolman.com"><span class="glyphicon glyphicon-envelope"></span></a></li>
+							<li><a href="https://github.com/jntolman" title="Visit Jarrett's GitHub"><img src="assets/images/social-github.svg" class="img-responsive hover-img" alt="GitHub" width="40"></a></li>
+							<li><a href="https://linkedin.com/in/jntolman" title="Visit Jarrett's LinkedIn"><img src="assets/images/social-linkedin.svg" class="img-responsive hover-img" alt="LinkedIn" width="40"></a></li>
+							<li><a href="https://stackoverflow.com/users/story/4113764" title="Visit Jarrett's StackOverflow"><img src="assets/images/social-stackoverflow.svg" class="img-responsive hover-img" alt="StackOverflow" width="40"></a></li>
+							<li><a class="mail" href="mailto:contact@jarretttolman.com" title="Email Jarrett"><span class="glyphicon glyphicon-envelope"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -63,7 +63,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col col-md-10">
-						<h2>About</h2>
+						<h2>about</h2>
 						<p>
 							I am currently enrolled in the Full-Stack Coding Boot Camp at UNCC with a focus on Mongo/Express/React/Node. 
 							Most recently, I led a team using Excel, VBA, and Python to create automated and scalable QA solutions 
@@ -85,8 +85,8 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col col-md-10">
-						<h2>Portfolio</h2>
-						<p>coming soon... for now, you check out my <a href="https://github.com/jntolman">GitHub</a>.</p>
+						<h2>portfolio</h2>
+						<p>coming soon... for now, you check out my <a title="Visit Jarrett's GitHub" href="https://github.com/jntolman">GitHub</a>.</p>
 					</div>
 				</div>
 			</div>
@@ -96,14 +96,14 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col col-md-10">
-						<h2>Resume</h2>
+						<h2>resume</h2>
 
 						<div class="row" id="profile">
 							<div class="col col-md-12">
 								<p>
 									Creative Full Stack Web Developer with experience implementing, managing, and automating 
 									processes in a fast-paced SaaS evironment. Particularly interested in growing 
-									programming skills to solve problems of increasing comlexity with a progressive company.
+									programming skills to solve problems of increasing complexity with a progressive company.
 								</p>
 							</div>
 						</div>
@@ -141,10 +141,10 @@
 									<div class="col col-sm-5">
 										<p class="school">UNC Charlotte</p>
 									</div>
-									<div class="col col-sm-4">
+									<div class="col col-sm-5">
 										<p class="program">Full Stack Web Development Certificate</p>
 									</div>
-									<div class="col col-sm-3">
+									<div class="col col-sm-2">
 										<p>05/2017</p>
 									</div>
 								</div>
@@ -152,10 +152,10 @@
 									<div class="col col-sm-5">
 										<p class="school">Cental Piedmont Community College</p>
 									</div>
-									<div class="col col-sm-4">
+									<div class="col col-sm-5">
 										<p class="program">AAS in Web Technologies</p>
 									</div>
-									<div class="col col-sm-3">
+									<div class="col col-sm-2">
 										<p>12/2011</p>
 									</div>
 								</div>
@@ -163,10 +163,10 @@
 									<div class="col col-sm-5">
 										<p class="school">UNC Charlotte</p>
 									</div>
-									<div class="col col-sm-4">
+									<div class="col col-sm-5">
 										<p class="program">BA in Theatre</p>
 									</div>
-									<div class="col col-sm-3">
+									<div class="col col-sm-2">
 										<p>05/2004</p>
 									</div>
 								</div>
@@ -178,7 +178,7 @@
 								<h3>Professional Experience</h3>
 								<div class="row">
 									<div class="col col-md-4">
-										<h4>Yodle | 06/2012 - 12/2016</h4>
+										<h4>Yodle <small>06/2012 - 12/2016</small></h4>
 									</div>
 								</div>
 								<div class="row">
@@ -187,8 +187,8 @@
 											<li>Led team responsible for developing and running scalable recurring and ad hoc audits for client services online production</li>
 											<li>Checked entire account base of 60,000 accounts for best practices in 
 												initial production build, lifetime maintenance, SEO, and SEM</li>
-											<li>Coordinated workflows to ensure quick resolution of flagged issues, automated tasks in 
-												Python and VBA, and delivered weekly Excel reporting to senior leadership</li>
+											<li>Coordinated workflows to ensure quick resolution, automated tasks in 
+												Python and VBA, delivered weekly Excel reporting to senior leadership</li>
 										</ul>
 									</div>
 								</div>
@@ -204,10 +204,10 @@
 			<div class="container-fluid text-center">
 				<div class="row">
 					<div class="col col-md-12">
-						<a class="mail" href="mailto:contact@jarretttolman.com"><span class="glyphicon glyphicon-envelope"></span></a>
+						<a class="mail" title="Email Jarrett" href="mailto:contact@jarretttolman.com"><span class="glyphicon glyphicon-envelope"></span></a>
 					</div>
 					<div class="col col-md-12">
-						<a href="https://www.codewars.com/users/jntolman"><img src="https://www.codewars.com/users/jntolman/badges/small"></a>
+						<a title="Visit Jarrett on Codewars" href="https://www.codewars.com/users/jntolman"><img src="https://www.codewars.com/users/jntolman/badges/small"></a>
 						<p>&copy; 2017 Jarrett Tolman</p>
 					</div>
 				</div>
