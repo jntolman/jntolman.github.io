@@ -52,6 +52,12 @@ h2 {
 	filter: alpha(opacity=50);
 }
 
+.itemBox {
+	border: solid 1px black;
+	min-height: 250px;
+	margin-bottom: 20px;
+}
+
 .school {
 	font-weight: bold;
 }
