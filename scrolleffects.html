@@ -1,14 +1,10 @@
 <!doctype html>
-<!-- Web Development Portfolio -->
-<!-- Jarrett Tolman - index.html -->
-<!-- ================================================= -->
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Jarrett Tolman</title>
-
+		<title>Jarrett Tolman | Web Developer</title>
+        <meta name="description" content="Full Stack Web Developer. Always learning, this page is my evolving portfolio of project work and coding experiments in HTML, CSS, and JavaScript.">
 		<!-- Latest compiled and minified Bootstrap CSS -->
         <link rel="stylesheet"
 			  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -19,33 +15,18 @@
 		<link rel='shortcut icon' href='assets/images/favicon.ico' type='image/x-icon'>
 	</head>
 
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<body>
 		
-		<!-- header -->
-		<header>
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-						</button>
-						<a class="navbar-brand" title="welcome" href="#about"><img class="img-responsive hover-img" src="assets/images/logik-profile-250.png" width="50" alt="Jarrett Tolman"></a>
-					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li><a class="navlink" id="firstlink" title="portfolio" href="#portfolio">samples</a></li>
-							<li><a class="navlink" id="lastlink" title="resume" href="#resume">skills</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="https://github.com/jntolman" title="Visit Jarrett's GitHub"><img src="assets/images/social-github.svg" class="img-responsive hover-img" alt="GitHub" width="40"></a></li>
-							<li><a href="https://linkedin.com/in/jntolman" title="Visit Jarrett's LinkedIn"><img src="assets/images/social-linkedin.svg" class="img-responsive hover-img" alt="LinkedIn" width="40"></a></li>
-							<li><a class="mail" href="mailto:contact@jarretttolman.com" title="Email Jarrett"><span class="glyphicon glyphicon-envelope"></span></a></li>
-						</ul>
-					</div>
-				</div>
-			</nav> 
-		</header>
-		
+        <section id="welcome">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-sm-12" style="position:fixed;">
+                        <img id="logikface" src="assets/images/logikface.svg" style="opacity:1.0;width:800px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
 		<!-- about -->
 		<section id="about">
 			<div class="container-fluid">
@@ -232,7 +213,12 @@
 					</div>
 					<div class="col col-md-12">
 						<a title="Visit Jarrett on Codewars" href="https://www.codewars.com/users/jntolman"><img src="https://www.codewars.com/users/jntolman/badges/small"></a>
-						<p>&copy; 2017 Jarrett Tolman</p>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="https://github.com/jntolman" title="Visit Jarrett's GitHub"><img src="assets/images/social-github.svg" class="img-responsive hover-img" alt="GitHub" width="40"></a></li>
+							<li><a href="https://linkedin.com/in/jntolman" title="Visit Jarrett's LinkedIn"><img src="assets/images/social-linkedin.svg" class="img-responsive hover-img" alt="LinkedIn" width="40"></a></li>
+							<li><a class="mail" href="mailto:contact@jarretttolman.com" title="Email Jarrett"><span class="glyphicon glyphicon-envelope"></span></a></li>
+						</ul>
+                        <p>&copy; 2017 Jarrett Tolman</p>
 					</div>
 				</div>
 			</div>
@@ -245,14 +231,7 @@
 				integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
 				crossorigin="anonymous"></script>
 
-		<script>
-			// hide the mobile menu on click
-			$(document).on('click','.navbar-collapse.in',function(e) {
-				if( $(e.target).is('a') ) {
-					$(this).collapse('hide');
-				}
-			});	
-		</script>	
+		<script src="assets/js/scripts.js"></script>
 
 		<!-- Google Analytics -->
 		<script>

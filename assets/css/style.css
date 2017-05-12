@@ -1,7 +1,3 @@
-/**
- * Web Developent Portfolio
- * Jarrett Tolman - style.css
- **/
 
 html, body {
 	height: 100%;
@@ -19,6 +15,10 @@ h2 {
 	color: #999;
 	border-bottom: solid 1px black;
 }
+
+/*#logikface {
+	
+}*/
 
 .navbar-default {
 	background-color: #fff;
@@ -56,6 +56,10 @@ h2 {
 	border: solid 1px black;
 	min-height: 250px;
 	margin-bottom: 20px;
+}
+
+.feature {
+	min-height: 520px;
 }
 
 .school {
