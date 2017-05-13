@@ -47,9 +47,18 @@ h2 {
 	padding-top: 70px;
 }
 
-#pagetitle, .hover-img:hover {
+#pagetitle {
+	overflow: hidden;
+	position: relative;
+}
+
+#pagetitlefirst, .hover-img:hover {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
+}
+
+.aboutItem {
+	visibility: hidden;
 }
 
 .itemBox {
