@@ -13,7 +13,7 @@ footer {
 
 h2 {
 	color: #999;
-	border-bottom: solid 1px black;
+	/*border-bottom: solid 1px black;*/
 }
 
 /*#logikface {
@@ -59,6 +59,39 @@ h2 {
 
 .aboutItem {
 	visibility: hidden;
+	margin: 20px 0 10px;
+}
+
+.aboutXs {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.aboutSm {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.aboutMd {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.aboutLg {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.fontDark {
+	color: #000;
+}
+
+.fontMed {
+	color: #666;
+}
+
+.fontLight {
+	color: #999;
 }
 
 .itemBox {
