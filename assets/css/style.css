@@ -77,8 +77,7 @@ h2 {
 }
 
 .sample {
-	visibility: visible;
-	display: none;
+	visibility: hidden;
 }
 
 .sampleSubHead {
