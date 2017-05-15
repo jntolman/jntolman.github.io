@@ -17,6 +17,9 @@ $(document).ready(function() {
     var loc = about.getBoundingClientRect();
     var top, preTop = loc.top;
 
+    logikface.style.height = (windowHeight/(1.25)) + "px";
+    logikface.style.visibility = "visible";
+
     // initite some helpers
     var aboutRun, sample01Run, sample02Run, sample03Run, skillsRun = false;
 

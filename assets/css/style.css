@@ -16,23 +16,13 @@ h2 {
 	/*border-bottom: solid 1px black;*/
 }
 
-/*#logikface {
-	
-}*/
+#logikface {
+	visibility: hidden;
+}
 
 #welcome, #about, #samples, #skills {
 	min-height: 100%;
-	padding-top: 70px;
-}
-
-#pagetitle {
-	overflow: hidden;
-	position: relative;
-}
-
-#pagetitlefirst, .hover-img:hover {
-	opacity: 0.5;
-	filter: alpha(opacity=50);
+	padding-top: 50px;
 }
 
 .aboutItem {
@@ -73,7 +63,7 @@ h2 {
 }
 
 .sampleRow {
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 }
 
 .sample {
