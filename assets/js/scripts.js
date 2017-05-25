@@ -119,8 +119,8 @@ $(document).ready(function() {
         var sample03Loc = sample03.getBoundingClientRect();
         var sample03Top = parseInt(sample03Loc.top);
 
-        var skillsLoc = skills.getBoundingClientRect();
-        var skillsTop = parseInt(skillsLoc.top);
+        // var skillsLoc = skills.getBoundingClientRect();
+        // var skillsTop = parseInt(skillsLoc.top);
         
         // set initial opacity based on location of about div
         opacityCheck(logikface, aboutTop);
