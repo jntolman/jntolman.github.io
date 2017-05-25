@@ -55,7 +55,8 @@
                     xhr.response.items.forEach(function(element) {
                         if (element.display) {
                             let elem = document.createElement('div')
-                            elem.innerHTML = '<p>' + element.title + '</p>'
+                            elem.innerHTML += '<h3>' + element.title + '</h3>'
+                            elem.innerHTML += '<p>' + element.description + '</p>'
                             document.getElementById('apiDemo').appendChild(elem)
                         }
                     });
