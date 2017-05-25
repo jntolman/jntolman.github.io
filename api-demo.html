@@ -53,9 +53,11 @@
             xhr.addEventListener('load', () => {
                 if (xhr.status === 200) {
                     xhr.response.items.forEach(function(element) {
-                        let elem = document.createElement('div')
-                        elem.innerHTML = '<p>' + element.title + '</p>'
-                        document.getElementById('apiDemo').appendChild(elem)
+                        if (element.display) {
+                            let elem = document.createElement('div')
+                            elem.innerHTML = '<p>' + element.title + '</p>'
+                            document.getElementById('apiDemo').appendChild(elem)
+                        }
                     });
                 }
             })
