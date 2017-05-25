@@ -10,7 +10,7 @@ $(document).ready(function() {
     var sample01 = document.getElementById('sample01');
     var sample02 = document.getElementById('sample02');
     var sample03 = document.getElementById('sample03');
-    var skills = document.getElementById('skills');
+    // var skills = document.getElementById('skills');
 
     // get window and initial position measurements
     var windowHeight = window.innerHeight;
@@ -144,9 +144,10 @@ $(document).ready(function() {
         } else if (sample03Top < 250 && !sample03Run) {
             sampleAnimations("sample03");
             sample03Run = true;
-        } else if (skillsTop < 250 && !skillsRun) {
-            // loc = skills.getBoundingClientRect();
         }
+         // else if (skillsTop < 250 && !skillsRun) {
+        //     // loc = skills.getBoundingClientRect();
+        // }
 
         preTop = top;
 
