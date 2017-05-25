@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jarrett Tolman | Web Developer</title>
+        <meta name="description" content="Full Stack Web Developer. Always learning, this page is my evolving portfolio of project work and coding experiments in HTML, CSS, and JavaScript.">
+		<!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet"
+			  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+			  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+			  crossorigin="anonymous">
+        <!-- font awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- custom css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel='shortcut icon' href='assets/images/favicon.ico' type='image/x-icon'>
+	</head>
+
+	<body>
+
+        <!-- samples -->
+		<section id="samples">
+			<div class="container-fluid">
+				
+                <div class="row sampleRow"  id="apiDemo">
+                    
+				</div>
+			
+            </div>
+		</section>
+
+		<!--footer -->
+		<footer>
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col col-md-12">
+
+                        <a href="https://github.com/jntolman" title="Visit Jarrett's GitHub"><i class="fa fa-github fa-3x footerIcon"></i></a>
+                        <a href="https://linkedin.com/in/jntolman" title="Visit Jarrett's LinkedIn"><i class="fa fa-linkedin fa-3x footerIcon"></i></a>
+                        <a href="mailto:contact@jarretttolman.com" title="Email Jarrett"><i class="fa fa-envelope fa-3x footerIcon"></i></a>
+
+					</div>
+				</div>
+			</div>
+		</footer> 
+
+		<script>
+			const xhr = new XMLHttpRequest()
+            xhr.open('get', 'https://safe-lowlands-25756.herokuapp.com/api/5926513c7b415f0011a70151')
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+            xhr.responseType = 'json'
+            xhr.addEventListener('load', () => {
+                if (xhr.status === 200) {
+                    xhr.response.items.forEach(function(element) {
+                        let elem = document.createElement('div')
+                        elem.innerHTML = '<p>' + element.title + '</p>'
+                        document.getElementById('apiDemo').appendChild(elem)
+                    });
+                }
+            })
+            xhr.send()
+		</script>
+
+	</body>
+</html>
